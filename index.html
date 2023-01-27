@@ -35,7 +35,7 @@
         <nav>
           <ul class="nav">
             <li class="nav__items">
-              <span><a class="nav__link nav__link--first" href="./index.html">Agencja</a></span>
+              <span><a class="nav__link nav__link--active" href="./index.html">Agencja</a></span>
             </li>
             <li class="nav__items">
               <span
@@ -415,16 +415,16 @@
             </div>
           </div>
         </div>
-        <!-- TU SKONCZYLEM   -->
+       
         <form>
-          <div class="form-flex">
-        <div class="form-join">
-      <label for="newsletter" class="join-newsletter">Zapisz się do newslettera</label>
-<input class="form-newsleter-email" type="email" name="email" placeholder="E-mail" id="newsletter"/>
+          <div>
+        <div class="form-newsletter">
+      <label for="newsletter" class="form-newsletter__label">Zapisz się do newslettera</label>
+<input class="form-newsletter__email" type="email" name="email" placeholder="E-mail" id="newsletter"/>
           
        
-        <div class="btn-newsletter btn-flex">
-          <button type="email" class="form-join-newsletter btn-flex">Zapisz się <svg class="newsletter-svg" width="24" height="24">
+        <div class="button-newsletter">
+          <button type="email" class="button-newsletter__label ">Zapisz się <svg class="button-newsletter__svg" width="24" height="24">
             <use href="./images/icons.svg#icon-newsletter" >
 
             </use>
@@ -439,63 +439,63 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" >
-        <button type="button" class="close-btn " data-modal-close>X
+        <button type="button" class="modal--close " data-modal-close>X
 </button>
 
 <form>
-  <p class="data">Zostaw swoje dane w formularzu poniżej</p>
+  <p class="form-data">Zostaw swoje dane w formularzu poniżej</p>
   <ul>
-  <li class="data2">
-    <label for="name" class="data-label">Imie</label>
+  <li class="form-list">
+    <label for="name" class="form-list__label">Imie</label>
     <div class="form-main">
-    <input class="data-place data-name" id="name" name="Username" type="text" />
+    <input class="form-list__input" id="name" name="Username" type="text" />
     <svg class="bg-svg" width="18" height="18">
       <use href="./images/icons.svg#icon-person"></use>
     </svg>
   </div>
   </li>
-  <li class="data2">
-    <label for="telephone" class="data-label">Telefon</label>
-    <div class="form-main">
-    <input class="data-place telephone" id="telephone" name="Usertelephone" type="text"/>
-    <svg class="bg-svg" width="18" height="18">
+  <li class="form-list">
+    <label for="telephone" class="form-list__label">Telefon</label>
+    <div class="form-list__backbox">
+    <input class="form-list__input" id="telephone" name="Usertelephone" type="text"/>
+    <svg class="form-list__svg" width="18" height="18">
       <use href="./images/icons.svg#icon-phone"></use>
     </svg>
     </div>
     </li>
-    <li class="data2">
-    <label for="email" class="data-label">Email</label>
+    <li class="form-list">
+    <label for="email" class="form-list__label">Email</label>
     <div class="form-main">
-    <input class="data-place email" id="email" name="email" type="email"/>
-    <svg class="bg-svg" width="18" height="18">
+    <input class="form-list__input" id="email" name="email" type="email"/>
+    <svg class="form-list__svg" width="18" height="18">
       <use href="./images/icons.svg#icon-email"></use>
     </svg>
   </div>
     </li>
-    <li class="data2">
-    <label for="comment" class="data-label">Komentarz</label>
+    <li class="form-list">
+    <label for="comment" class="form-list__label">Komentarz</label>
     
-    <textarea class="textarea" placeholder="Wprowadź tekst"></textarea>
+    <textarea class="form-list__textarea" placeholder="Wprowadź tekst"></textarea>
     </li>
   
   
-    <label class="terms-condition">
-      <input class="checkbox" id="checkbox" type="checkbox" name="checkbox"/>
+    <label class="form-label">
+      <input class="form-label__checkbox" id="checkbox" type="checkbox" name="checkbox"/>
  <div>
-  <svg class="check-svg" width="13" height="10"><use href="./images/icons.svg#icon-check">
+  <svg class="form-label__svg" width="13" height="10"><use href="./images/icons.svg#icon-check">
 
   </use></svg>
       
      
  </div>
 
- <span class="term">
+ <span class="form-label__term">
   Oświadczam iż akceptuję
-  <a class="term-condition">Regulamin</a>
+  <a>Regulamin</a>
   i
-  <a class="term-condition">Politykę Prywatności.</a></span>
+  <a>Politykę Prywatności.</a></span>
 </label>
-        <button class="btn-form-modal" type="submit">Wyślij</button>
+        <button class="button-form-modal" type="submit">Wyślij</button>
       </ul>
       </form>
   
